@@ -1,14 +1,16 @@
+import {Link} from "react-router-dom"
+
 const Header = () => (   
     <header className="site-header">
         <div className="contenedor">
             <div className="barra">
-                <a href="/">
+                <Link to="/">
                     <h1 className="no-margin">Blog<span>DeCafé</span></h1>
-                </a>
+                </Link>
                 <nav className="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="cursos.html">Cursos</a>
-                    <a href="contacto.html">Contacto</a>
+                    <Link to="../pages/About">Nosotros</Link>
+                    <Link to="../pages/Courses">Cursos</Link>
+                    <Link to="../pages/Contact">Contacto</Link>
                 </nav>
             </div>
 
