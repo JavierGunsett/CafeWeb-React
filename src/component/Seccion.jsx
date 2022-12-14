@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Aside from "./Aside";
 import blog1 from "../assets/blog1.jpg";
 import blog2 from "../assets/blog2.jpg";
@@ -19,9 +20,9 @@ const Seccion = () => (
             eu ullamcorper justo. Morbi suscipit vestibulum pellentesque. Nunc
             id erat tincidunt, semper ante eu, pulvinar neque.
           </p>
-          <a href="entry" className="btn btn-primario">
+          <Link to="entry" className="btn btn-primario">
             Leer Entrada
-          </a>
+          </Link>
         </div>
       </article>
       <article className="entrada-blog">
@@ -36,9 +37,9 @@ const Seccion = () => (
             eu ullamcorper justo. Morbi suscipit vestibulum pellentesque. Nunc
             id erat tincidunt, semper ante eu, pulvinar neque.
           </p>
-          <a href="entry" className="btn btn-primario">
+          <Link to="entry" className="btn btn-primario">
             Leer Entrada
-          </a>
+          </Link>
         </div>
       </article>
       <article className="entrada-blog">
@@ -53,9 +54,9 @@ const Seccion = () => (
             eu ullamcorper justo. Morbi suscipit vestibulum pellentesque. Nunc
             id erat tincidunt, semper ante eu, pulvinar neque.
           </p>
-          <a href="entry" className="btn btn-primario">
+          <Link to="entry" className="btn btn-primario">
             Leer Entrada
-          </a>
+          </Link>
         </div>
       </article>
     </main>

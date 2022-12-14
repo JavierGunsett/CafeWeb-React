@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Aside = () => (
   <aside className="cursos">
     <h2>Nuestros Cursos y Talleres</h2>
@@ -11,9 +13,9 @@ const Aside = () => (
         <p className="no-margin">
           Cupo: <span>20</span>{" "}
         </p>
-        <a href="courses" className="btn btn-secundario">
+        <Link to="courses" className="btn btn-secundario">
           Más Información
-        </a>
+        </Link>
       </li>
       <li className="curso">
         <h4 className="no-margin">4 Recetas de café para principiantes</h4>
@@ -23,9 +25,9 @@ const Aside = () => (
         <p className="no-margin">
           Cupo: <span>20</span>{" "}
         </p>
-        <a href="courses" className="btn btn-secundario">
+        <Link to="courses" className="btn btn-secundario">
           Más Información
-        </a>
+        </Link>
       </li>
     </ul>
   </aside>
