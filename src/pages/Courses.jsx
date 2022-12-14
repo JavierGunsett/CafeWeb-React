@@ -1,17 +1,18 @@
 import React from "react";
-import Footer from "../component/Footer";
-import Header from "../component/Header";
+import curso1 from '../assets/curso1.jpg'
+import curso2 from '../assets/curso2.jpg'
+import curso3 from '../assets/curso3.jpg'
 
-const Courses = () =>{  
-    <> 
-    <Header />
+
+const Courses = () =>( 
+    <>   
 
     <main className="contenedor">
         <h2 className="centrar-texto">Nuestros Próximos Cursos y Talleres</h2>
 
         <article className="curso grid">
             <div className="columnas-4">
-                <img src="img/curso1.jpg" alt="Imagen Curso"/>
+                <img src={curso1} alt="Imagen Curso"/>
             </div>
             <div className="columnas-8">
                 <h4 className="no-margin">Técnicas de extracción de café</h4>
@@ -25,7 +26,7 @@ const Courses = () =>{
 
         <article className="curso grid">
             <div className="columnas-4">
-                <img src="img/curso2.jpg" alt="Imagen Curso"/>
+                <img src={curso2} alt="Imagen Curso"/>
             </div>
             <div className="columnas-8">
                 <h4 className="no-margin">Taller para tostar y moler granos</h4>
@@ -39,7 +40,7 @@ const Courses = () =>{
     
         <article className="curso grid">
             <div className="columnas-4">
-                <img src="img/curso3.jpg" alt="Imagen Curso"/>
+                <img src={curso3} alt="Imagen Curso"/>
             </div>
             <div className="columnas-8">
                 <h4 className="no-margin">4 Recetas de café para principiantes</h4>
@@ -52,8 +53,8 @@ const Courses = () =>{
         </article>
     </main>
 
-    <Footer />
+    
     </>
-}
+)
 
 export default Courses;

@@ -1,17 +1,7 @@
-import React from "react"; 
-import Header from "../component/Header"
-import Seccion from "../component/Seccion"
-import Footer from "../component/Footer"
+import React from "react";
+import Seccion from "../component/Seccion";
 
 
-const Home = () =>{
-
-<>
-        <Header />
-        <Seccion />
-        <Footer />
-</>
-
-};
+const Home = () => <Seccion />;
 
 export default Home;

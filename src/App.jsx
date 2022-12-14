@@ -1,26 +1,46 @@
-import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 
-
 // PAGINAS
-import Home from './pages/Home';
-import About from './pages/About';
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Courses from "./pages/Courses";
 import Contact from "./pages/Contact";
+import Layout from "./hoc/Layout";
+import Entry from "./pages/Entry";
 
-function App(){
-    return (
-        <Router>
-        <Routes>
-            <Route exact path="/" element={<Home />}/>
-            <Route path="/About" element={<About />} />
-            <Route path="/Courses" element={<Courses />} />
-            <Route path="/Contact" element={<Contact />} />
-        </Routes>
-    </Router>  
-    )
-    
-    
+/*Routeo*/
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "courses",
+        element: <Courses />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "entry",
+        element: <Entry />,
+      },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;
